@@ -1,0 +1,41 @@
+{
+  "name": "aws-quote-generator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@tiptap/extension-bubble-menu": "^2.0.3",
+    "@tiptap/extension-collaboration": "^2.0.3",
+    "@tiptap/extension-document": "^2.0.3",
+    "@tiptap/extension-placeholder": "^2.0.3",
+    "@tiptap/extension-text": "^2.0.3",
+    "@tiptap/react": "^2.0.3",
+    "@tiptap/starter-kit": "^2.0.3",
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
+    "luxon": "^3.3.0",
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.11",
+    "typescript": "5.0.4",
+    "uuid": "^9.0.0",
+    "y-webrtc": "^10.2.5",
+    "y-websocket": "^1.5.0",
+    "yjs": "^13.6.1"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.26",
+    "babel-plugin-styled-components": "^2.1.3"
+  }
+}
