@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { useState } from "react";
 import { EditorWrapper } from "@/components/EditorElements";
 import { EditorComponent } from "@/components/Tiptap";
+import AuthForm, { StyledAuthForm } from "@/components/auth-form";
 
 export default function Home() {
   const [editorState, setEditorState] = useState(null);
@@ -12,16 +13,13 @@ export default function Home() {
   };
   return (
     <>
-      <Navbar>
+      <AuthForm />
+      {/* <Navbar>
         <BrandName> Vertex </BrandName>
-        <button onClick={handleScroll}> scroll to view </button>
       </Navbar>
       <EditorWrapper>
-        <EditorComponent
-          setEditorState={setEditorState}
-          editorState={editorState}
-        ></EditorComponent>
-      </EditorWrapper>
+        <EditorComponent></EditorComponent>
+      </EditorWrapper> */}
     </>
   );
 }

@@ -33,7 +33,6 @@ const Tiptap = ({ editorState, setEditorState }) => {
     content: "<p>Hello World! 🌎️</p>",
     onUpdate: ({ editor }) => {
       const json = editor.getJSON();
-      setEditorState(editor);
       // send the content to an API here
     },
   });
