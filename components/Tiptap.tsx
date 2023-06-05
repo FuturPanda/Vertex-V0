@@ -14,7 +14,7 @@ import DateStampComponent from "./Extension.js";
 // const ydoc = new Y.Doc();
 // const provider = new WebrtcProvider("tiptap-collaboration-extension", ydoc);
 
-const Tiptap = () => {
+const Tiptap = ({ editorState, setEditorState }) => {
   const editor = new Editor({
     extensions: [
       StarterKit.configure({
@@ -33,6 +33,7 @@ const Tiptap = () => {
     content: "<p>Hello World! 🌎️</p>",
     onUpdate: ({ editor }) => {
       const json = editor.getJSON();
+      setEditorState(editor);
       // send the content to an API here
     },
   });
@@ -52,7 +53,7 @@ const Tiptap = () => {
 
   useEffect(() => {
     console.log(editor);
-
+    // setEditorState(editor);
     editor
       .chain()
       .focus("end")
